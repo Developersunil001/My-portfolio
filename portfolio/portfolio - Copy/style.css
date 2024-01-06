@@ -1,0 +1,1097 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: gilroy;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    /* height: 100%; */
+    /* overflow: hidden; */
+}
+#fs{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999999999999;
+    background-color:#111;
+    background-color:#161616;
+    color: #fff;
+}
+.img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 5%;
+    /* opacity: 0; */
+    z-index: 9999;
+    /* background-color: red; */
+}
+#fs #ak{
+    color: #14cf93;
+    font-family:"MAZIUS REVIEW 20.09 Ex italic";
+}
+#green{
+    width: 100%;
+    height:100%;
+    z-index: 99999999;
+    position: absolute;
+    bottom: 0;
+    background-color:#14cf93;
+}
+#white{
+    width: 100%;
+    height: 0vh;
+    z-index: 9999;
+    background-color: #dadada;
+     position: absolute;
+     bottom: 0; 
+}
+#fs #topheading{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    /* background-color: red; */
+}
+#fs #topheading h5{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: 11px;
+}
+#fs h1{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4vw;
+    font-weight: 500;
+    /* background-color: red ; */
+}
+.parent span{
+    display:  flex;
+    justify-content: center;
+}
+ 
+.reveal .parent{
+    display: flex;
+    width: 100%;
+     justify-content: center;
+    /* background-color: yellow; */
+     overflow-y: hidden;
+}
+/* .reveal .parent::-webkit-scrollbar{
+    display: none;
+} */
+.reveal .parent .child{
+    display: block;
+    /* background-color:red; */
+    /* transform: translateY(100%); */
+}
+.parent .child span{
+    display: inline-block;
+}
+
+#home{
+    padding-top: 5vw;   
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    background-color: #fcfaf8;
+    /* background-color: red; */
+}
+#nav{
+    /* pointer-events: none; */
+    position: fixed;
+    z-index: 999999999999999999;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   width: 100%;
+   height: 15vh;
+   /* background-color:yellow;  */
+}
+#nav a{
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-size: .8vw;
+    font-weight: 300;
+}
+#nav a .line{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    /* width: 100%; */
+    background-color: #000;
+}
+#line1{
+    left: 0;
+    width: 0%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    transition-delay: .1s;
+}
+#line2{
+    right: 0;
+    width: 100%;
+    background-color: grey;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#nav a:hover #line2{
+    width: 0%;
+}
+#nav a:hover #line1{
+    width: 100%;
+}
+#home .row{
+    padding: 0 5vw;
+    padding-right: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+}
+.row h1{
+    font-size: calc(11.60714vw + 40.85714px);
+    font-weight: 500;
+    font-family: gilroy;
+    text-transform: capitalize;
+    color: #383838;
+}
+.row .text>h5{
+    text-transform: uppercase;
+     color: #a2a2a2;
+    font-family: gilroy,sans-serif;
+     font-size: .8vw;
+     font-weight: 500;
+}
+.row svg{
+    height: 170px;
+    margin-left: 4vw;
+    margin-right: 2vw;
+}
+#home path,polyline{
+    stroke: #14cf93;
+}
+.row .text>img{
+    height: 10vw;
+    width: 10vw;
+}
+.csection{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 150vh;
+    /* background-color: red; */
+}
+.csection .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vw 0;
+    /* justify-content: center;/ */
+    width: 40%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.csection .text .r1{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    /* background-color: red; */
+    overflow: hidden;
+} 
+.csection .text .r1 h5{
+    line-height: 1;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #494949;
+    /* position: absolute; */
+    transform: translateY(150%);
+}
+.csection .text span{
+    text-transform: capitalize;
+    color: #14cf93;
+    font-family:"MAZIUS REVIEW 20.09 Ex italic";
+    /* font-family: mazius,sans-serif; */
+}
+.csection .cards{
+    position: relative;
+    z-index: 999;
+    width: 60%;
+    height: 100%;
+}
+.csection .cards .card1{
+    position: absolute;
+    width: 30vw;
+    height: 100vh;
+    border-radius: 2.5vw;
+}
+.csection .cards .card1>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2.5vw;
+    filter: saturate(0);
+}
+.csection .cards .card1:nth-child(1){
+    top: 2%;
+    left: 10%;
+    transform: rotate(-20deg);
+}
+
+.csection .cards .card1:nth-child(2){
+    top: 12%;
+    left: 25%;
+    transform: rotate(-10deg);
+}
+.csection .cards .card1:nth-child(3){
+    top: 23%;
+    left: 40%;
+    transform: rotate(-10deg);
+}
+.csection .cards .card1>img:hover{
+    filter: saturate(1);
+}
+#part2{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 550vh;
+    background-color: red;
+    background-color: #f2f2f2;
+    background-color: rgb(242,242,242);
+}
+#part2 .svgimg{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+#part2 .svgimg .mi{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -20%;
+    object-fit: cover;
+    transform: rotate(-180deg);
+}
+
+ .arrow1{
+   width:100%;
+   height: 20vh;
+   display: flex;
+   align-items: center;
+   /* background-color: yellow; */
+}
+ .arrow1 .o-ui-arrow1 {
+    position: absolute;
+    left: 7%;
+    stroke: #d2d2d2;
+}
+#part2 .text{
+    display: flex;
+    padding: 0 20vw;
+    width: 100%;
+    height: fit-content;
+}
+#part2 .stext{
+    
+    width: 30vw;
+    height: 20vh;
+   
+}
+#part2 .stext>h5{
+    font-weight: 500;
+       color: #d2d2d2;
+       width: 40%;
+       margin-bottom: 1.5vw;
+       font-size: 1vw;
+       text-transform: uppercase;
+       font-family: gilroy;
+}
+#part2 .stext>h3{
+    color: #000;
+    font-weight: 500;
+    font-size: 1.3vw;
+    width: 70%;
+    text-transform: uppercase;
+    font-family: gilroy;
+}
+#part2 .hrdiv{
+    padding: 0 5vw 0vw 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35vh;
+}
+#part2 .hr{
+  width:100%;
+  height: 2px;
+  background-color: #d2d2d2;
+}
+#part2 .fw{
+    display: flex;
+    align-items: center;
+    justify-content:space-around ;
+    padding-left: 8vw;
+    width: 100%;
+    height: fit-content;
+}
+#part2 .h1>h1{
+    display: flex;
+    align-items:flex-end;
+    font-size: 9vw;
+    color: #383838;
+    font-family: gilroy;
+    font-weight: 500;
+}
+#part2 .h1>h1 #r{
+    color: #14cf93;
+    font-family:"MAZIUS REVIEW 20.09 Ex italic";
+}
+#part2 p{
+    font-size: 1.5vw;
+    
+}
+#part2 .fw>.o-ui-arrow {
+    stroke: #d2d2d2;
+    transform: rotate(90deg);
+}
+#part2 .fw .h1{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#part2 .fw .h1 h1{
+    transform: translateY(100%);
+}
+#part2 .i1{
+    display: flex;
+    align-items: flex-end;
+    padding: 0 4vw;
+    gap: 7vw;
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#part2  .img1{
+    position: relative;
+    width: 50%;
+    height: 95%;
+    border-radius: 3vw;
+    filter: saturate(1);
+    overflow: hidden;
+}
+#part2  .img1:hover{
+    filter: saturate(0);
+}
+#part2  img{
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    border-radius: 3vw;
+}
+#part2 .img1 .bottom{
+    padding: 0 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    width: 100%;
+    height:40%;
+    position: relative;
+    position: absolute;
+    bottom: 2%;   
+}
+#part2 .img1 .bottom>h3{
+    position: absolute;
+    transform: translateY(-170%);
+    width: fit-content;
+    padding: .7vw 1.5vw;
+    border-radius: 2vw;
+    text-transform: capitalize;
+    font-weight: 400;
+    opacity: 0;
+    font-size: .8vw;
+    font-family: gilroy;
+    background-color: #fff;
+}
+#part2 .img1 .bottom>h2{
+    position: absolute;
+    transform: translateY(-150%);
+    width: fit-content;
+    opacity: 0;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: .8vw;
+    background-color: #fff;
+    font-family: gilroy;
+}
+#part2 .img1 .bottom .icon{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+#part2 .img1 .bottom .icon>h1{
+    width: fit-content;
+    padding: .6vw 3vw;
+    font-family: gilroy;
+    border-radius: 2.5vw;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 3vw;
+    background-color: #fff;
+}
+#part2 .img1 .bottom .icon .ia{
+    width: 4.5vw;
+    height: 4.5vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#part2 .img2{
+    position: relative;
+    width: 31%;
+    height: 70%;
+    border-radius: 3vw;
+    filter: saturate(1);
+    overflow: hidden;
+}
+#part2 .img2:hover{
+    filter: saturate(0);
+}
+#part2 .i1 .img2 img{
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+}
+#part2 .img2 .bottom{
+    padding: 0 1vw;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 43%;
+    flex-direction: column;
+    gap: 1.5vw;
+    position: absolute;
+    bottom: 2%;    
+}
+#part2 .img2 .bottom>h3{
+    width: fit-content;
+    padding: .7vw 1.5vw;
+    border-radius: 2vw;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: .8vw;
+    opacity: 0;
+    position: absolute;
+    transform: translateY(-200%);
+    font-family: gilroy;
+    background-color: #fff;
+}
+#part2  .img2 .bottom>h2{
+    width: fit-content;
+    padding: 1vw 2vw;
+    position: absolute;
+    transform: translateY(-150%);
+    border-radius: 2vw;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: .8vw;
+    opacity: 0;
+    
+    background-color: #fff;
+    font-family: gilroy;
+}
+#part2 .bottom .icon{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+#part2 .img2 .bottom .icon>h1{
+    width: fit-content;
+    padding: .6vw 3vw;
+    font-family: gilroy;
+    border-radius: 2.5vw;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 3vw;
+    background-color: #fff;
+}
+#part2 .img2 .bottom .icon .ia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5vw;
+    height: 4.5vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#part2 .img2 .bottom .icon .ia>img{
+    width: 1vw;
+    height: 1vw;
+}
+#part2 .i2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4vw;
+    gap: 7vw;
+    
+    width: 100%;
+    height: 100vh;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#part2 .i3{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content:center;
+    padding: 0 4vw;
+    gap: 7vw;
+   
+    width: 100%;
+    height: 100vh;
+    
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#imgthree{
+    position: absolute;
+    top: 30%;
+    z-index: 99999999;
+} 
+.btext{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+}
+.links{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 55%;
+    gap: 1vw;
+}
+.links h5{
+    margin-bottom: 1vw;
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 500;
+    color: #ded7c7;
+}
+.btext .links .alink{
+    position: absolute;
+     bottom: 0;
+    right: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5vw;
+}
+.btext .links .atag a{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.btext .links .atag>a .at{
+    display: flex;
+}
+.btext .links .atag>a h2{
+   font-weight: 400;
+   font-size: 1.2vw;
+
+}
+.btext .links .atag>a i{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    font-size: 1.3vw;
+    color: #14cf93;
+    opacity: 0;
+    transform: translateX(-100%);
+ }
+ .btext .links .atag:hover i{
+    transform: translateX(30%);
+    opacity: 1;
+ }
+ .btext .links a .bline{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+ }
+ #bline1{
+    left: 0;
+    width: 0%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    transition-delay: .1s;
+}
+#bline2{
+    right: 0;
+    width: 100%;
+    background-color: grey;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.btext  a:hover #bline2{
+    width: 0%;
+}
+.btext a:hover #bline1{
+    width: 100%;
+}
+.btext .button{
+    position: relative;
+    width: 100%;
+    height: 45%;
+}
+.btext .button .sp1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+.btext .button .sp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 9999999;
+    width: 80%;
+    height: 34%;
+    border-radius: 3vw;
+    border: 2px solid #dfdfdf;
+}
+.btext .button .sp h1{
+    color: #000;
+    z-index: 9999999999;
+    font-weight: 500;
+    font-size: 1.3vw;
+    text-transform: capitalize;
+}
+.btext .button .sp h1 span{
+    font-family:"MAZIUS REVIEW 20.09 Ex italic";
+    font-style: italic;
+    font-weight: 600;
+}
+.btext .button .white{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    opacity: 0;
+    height: 100%;
+    border-radius: 3vw;
+    background-color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+} 
+.btext .button .sp:hover h1{
+    font-weight: 700;
+}
+.btext .button .sp:hover span{
+    font-weight: 900;
+}
+.btext .button .bsvgimg{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+}
+.btext .button .bsvgimg .mi2{
+
+    position: absolute;
+    top: 32%;
+}
+
+#part3{
+    width: 100%;
+    height: 200vh;
+    background-color: white;
+}
+#part3 .htext{
+    padding-right: 28vw;
+    padding-left: 5vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    /* background-color: yellow; */
+}
+.htext h1{
+    font-size: 10vw;
+    text-transform:capitalize;
+    font-family: gilroy;
+    font-weight: 500;
+    transform: translateY(100%);
+    color: #383838;
+    letter-spacing:0;
+}
+.htext h1 #n{
+    font-family:"MAZIUS REVIEW 20.09 Ex italic";
+    font-style: italic;
+    font-weight: 600;
+    color: #14cf93;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+#part3 .htext .h5>h5{
+    font-size: 1vw;
+    color: #b1b1b1;
+    font-weight: 500;
+}
+#part3 .mtext{
+    padding: 0 3vw;
+    display: flex;
+    width: 100%;
+    height: 160vh;
+    /* background-color: red; */
+}
+ #part3 .mtext .photo{
+    padding: 5vw 0;
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+    width: 40%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+ }
+ #part3 .mtext .photo .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: 50%;
+    /* background-color: red; */
+ }
+ #part3 .mtext .photo .content .pimg{
+    width: 90%;
+    height: 40%;
+    border-radius: 1vw;
+    background-color: yellow;
+ }
+ #part3 .mtext .photo .content h5{
+    font-size: .8vw;
+    margin-bottom: 1.5vw;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    font-weight: 500;
+ }
+ #part3 .mtext .photo .content h1{
+    font-size: 1.7vw;
+    width: 80%;
+    font-weight: 900;
+    color: #414141;
+    font-weight: 500;
+    margin-bottom: 1vw;
+ }
+ #part3 .mtext .photo .content p{
+    font-size: .7vw;
+    width: 90%;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    font-weight: 500;
+    margin-top: 1.5vw;
+ }
+ #part3 .mtext .text{
+    width: 60%;
+    height: 100%;
+    /* background-color: blue; */
+ }
+ #part3 .mtext .text .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    /* background-color: red; */
+    border-bottom: 2px solid #e1e0de;
+ }
+ #part3 .mtext .text .row .h1{
+    overflow: hidden;
+ }
+ #part3 .mtext .text .row h1{
+    text-align:left ;
+    font-size: 2.2vw;
+    transform: translateY(-100%);
+    font-weight: 600;
+    font-family: gilroy;
+    margin-right:10vw;
+    color: #414141;
+ }
+ #part3 .mtext .text .row h3 #f{
+    font-family:"MAZIUS REVIEW 20.09 Ex italic";
+    font-style: italic;
+    font-weight: 400;
+ }
+ #part3 .mtext .text .row h3{
+    font-size: .7vw;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    font-weight: 400;
+ }
+ #part3 .mtext .text .icondiv{
+    transform: translateX(-100%);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: #414141;
+    background-color: grey;
+ }
+ #part3 .mtext .text .icondiv img{
+    width: 1.5vw;
+ }
+ #part3 .mtext .text .row .h1{
+    display: flex;
+    width: 28vw;
+    align-items: flex-start;
+    /* background-color: red; */
+ }
+ #part3 .mtext .text .icondiv:hover img{
+      transform: rotate(-30deg);
+ }
+ #part4{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    /* background-color: yellow; */
+    background-color: #253b39;
+ }
+ #c-circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ #part4 .text{
+    width: 100%;
+    height: 70vh;
+    padding-top: 20vh;
+    /* background-color: #ff0000; */
+ }
+ #part4 .text1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height:12vh;
+    /* background-color:yellow; */
+ }
+ #part4 .text2{
+    display: flex;
+    align-items:flex-end;
+    padding-right: 33vw;
+    width: 100%;
+    height:12vh;
+    /* background-color:grey; */
+ }
+ #part4 .text h1{
+    display: inline-block;
+    white-space: nowrap;
+    /* width: 50%; */
+    font-size: 7vw;
+    color: #fff;
+    font-family: gilroy;
+    /* background-color: rebeccapurple; */
+     text-transform: uppercase;
+    font-weight: 500;
+
+}
+#part4 .button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    width: 100%;
+    height: 20vh;
+    /* background-color:red; */
+}
+#part4 .button .sp4{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 16vh;
+    border-radius: 3.5vw;
+    /* background-color: grey; */
+    border: 1.1px solid #fff;
+}
+#part4 .button .sp4 .white1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    opacity: 0;
+    height: 100%;
+    border-radius: 3vw;
+    background-color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+#part4 .button h1{
+    font-size: 2vw;
+    color: #fff;
+    z-index: 99999;
+    font-weight: 500;
+}
+#part4 .button .sp4:hover h1{
+    color: #000;
+    font-weight:  700;
+}
+
+#part4 .button .sp5{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 16vh;
+    border-radius: 3.5vw;
+    /* background-color: grey; */
+    border: 1.1px solid #fff;
+}
+#part4 .button .sp5 .white2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    opacity: 0;
+    height: 100%;
+    border-radius: 3vw;
+    background-color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+#part4 .button .sp5:hover h1{
+    color: #000;
+    font-weight:  700;
+}
+#part4 .social{
+    position: relative;
+    padding:0 3vw;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    height: 50vh;
+    widows: 100%;
+    /* background-color: red; */
+}
+#part4 .social .behance{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 22%;
+    height: 30%;
+    border-top: 1.1px solid #a2a2a2;
+    /* background-color: yellow; */
+}
+#part4 .social .behance .green{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #14cf93;
+}
+#part4 .social .behance>.textb{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    position: relative;
+    /* background-color: red; */
+    /* height:10vh; */
+}
+#part4 .social .behance .textb>h3{
+    font-size: 1.5vw;
+    color: #fff;
+    font-weight: 500;
+}
+#part4 .social .behance .textb>h4{
+    font-size: .8vw;
+    color: #a2a2a2;
+
+} 
+ #part4 .social .behance .simg{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    width: 5vw;
+    height: 7vh;
+    z-index: 9999999999999;
+}
+
+#part4 .social .behance:hover .textb{
+    margin-left: 1vw;
+}
+#part4 .social .behance:hover .simg{
+    margin-right: 1vw;
+}
+#part4 .social .behance:hover .green{
+    height: 100%;
+}
+#part4 .bnav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 3vw;
+    width: 100%;
+    height: 40vh;
+    /* background-color: red; */
+}
+#part4 .bnav>p{
+    font-size: 1vw;
+    color: #a2a2a2;
+}
+#part4 .bnav>h5{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #a2a2a2;
+}
+
+
+
+
+  

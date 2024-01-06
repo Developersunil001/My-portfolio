@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    justify-content:center ;
+    width: 100%;
+    height: 100%;
+    background-color: #dadada;
+}
+#cursor{
+    display: flex;
+     gap: 2vw;
+    flex-direction: column;
+    width: 20vw;
+}
+ 
+#cursor .row{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+}
+#cursor .row .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+#cursor .row .text h3{
+    text-transform: uppercase;
+    font-family: gilroy;
+     font-weight: 540;   
+     font-size: .8vw; 
+     padding: .5vw 1.5vw;
+     border-radius: 3vw;
+     background-color: #fff;
+}
+#cursor .imgs{
+    position: relative;
+    width: 100%;
+    background-color: red;
+}
+#cursor .imgs img{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    animation: imghover 4s linear infinite;
+}
+#cursor img:nth-child(2){
+   animation-delay: 1s;
+}
+#cursor img:nth-child(3){
+    animation-delay: 2s;
+ }
+ #cursor img:nth-child(4){
+    animation-delay: 3s;
+ }
+ #cursor img:nth-child(5){
+    animation-delay: 4s;
+ }
+
+
+@keyframes imghover{
+        0%{
+            opacity: 1;
+        }
+        20%{
+            opacity: 1;
+        }
+        21%{
+            opacity: 0;
+        }
+        40%{
+            opacity: 0;
+        } 
+         60%{
+            opacity: 0;
+        }
+        80%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+}
